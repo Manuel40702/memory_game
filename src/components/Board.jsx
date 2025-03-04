@@ -7,12 +7,11 @@ import confetti from 'canvas-confetti'
 
 let size = 4;
 
-export const Board = ({setStart, start, gameOver, setGameOver}) => {
+export const Board = ({setStart, start, gameOver, setGameOver, setFinishGame, finishGame}) => {
 
     const [cards, setCards] = useState([])
     const [flippedCard, setFlippedCard] = useState([])
     const [moves, setMoves] = useState(0)
-    const [finishGame, setFinishGame] = useState(false)
     const [passLevel, setPassLevel] = useState(false)
     const [isDisabled, setIsDisabled] = useState(false)
     const score = useRef(0)
@@ -95,6 +94,9 @@ export const Board = ({setStart, start, gameOver, setGameOver}) => {
         }
 
         if(cards.every(card => card.matched)){
+            if(size === imgs.length){
+                setFinishGame(true)
+            }
             setPassLevel(true)
             setIsDisabled(true)
         }

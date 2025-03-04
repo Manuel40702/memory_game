@@ -3,7 +3,7 @@ import Countdown from "react-countdown"
 
 const Counter = ({props}) => <span>{props.minutes + ' : ' + props.seconds}</span>
 
-export const Timer = ({start, setGameOver}) => {
+export const Timer = ({start, setGameOver, finishGame}) => {
 
     const timerRef = useRef()
 
@@ -12,12 +12,17 @@ export const Timer = ({start, setGameOver}) => {
     }
 
     useEffect(() => {
+
+        if(finishGame){
+            timerRef.current.pause()
+        }
+
         if(start){
             timerRef.current.start()
         }else{
             timerRef.current.pause()
         }
-    }, [start])
+    }, [start, finishGame])
 
     return (
         <div className='flex justify-center items-center bg-amber-600 col-span-4'>
