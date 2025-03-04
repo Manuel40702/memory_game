@@ -1,12 +1,11 @@
-# React + Vite
+# Memory Game
+This project allows to play a memory game. It is built using React, Javascript, Tailwindcss
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Preview
+![Preview10](https://github.com/user-attachments/assets/4b04874e-4557-4aa9-b6ad-b79d9c2b0897)
 
-Currently, two official plugins are available:
+## Deployment
+Using Netlify: [Memory Game](https://meek-duckanoo-5e0a21.netlify.app/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#### Credits 
+[Programacion para el mundo]([https://youtu.be/oWPFcuH8x6M?si=tRVrNElG-Mm04yvc](https://youtu.be/ir9eHllJUeE?si=tyxRpTKa84Yt0tWq))
